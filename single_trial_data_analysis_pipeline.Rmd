@@ -103,7 +103,7 @@ The `TD` object just created is a `list` with five items, one for each trial (co
 The metadata will be a `data.frame` with five rows, one for each trial in the object named `dropsTD`. The `data.frame` has the following columns:
 
 |            | Content     | Usage                                                                    |
-|:------------|:------------|:----------------------------------------------|
+|:-----------|:------------|:-------------------------------------------------------------------------|
 | trLocation | Location    | Default names for plots and reports                                      |
 | trDate     | Date        |                                                                          |
 | trDesign   | Design      | Model specification (see [**Model types**](#modType))                    |
@@ -303,7 +303,7 @@ The output of the `fitTD()` function is an object of class `STA` (Single Trial A
 Models can be fitted for five different trial designs. These are listed in the following table with their respective model specifications.
 
 | design                             | code           | model fitted                                                                |
-|------------------|----------------|---------------------------------------|
+|------------------------------------|----------------|-----------------------------------------------------------------------------|
 | incomplete block design            | `"ibd"`        | trait = **subBlock** + genotype + $\epsilon$                                |
 | resolvable incomplete block design | `"res.ibd"`    | trait = *repId* + **repId:subBlock** + genotype + $\epsilon$                |
 | randomized complete block design   | `"rcbd"`       | trait = *repId* + genotype + $\epsilon$                                     |
